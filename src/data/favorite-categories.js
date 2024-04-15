@@ -31,7 +31,7 @@ export default [
 	},
 	{
 		id: 2,
-		title: 'Hip hop',
+		title: 'R&B',
 		cover: 'https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe',
 		color: '#ba5d08'
 	},
