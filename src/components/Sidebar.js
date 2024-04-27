@@ -6,6 +6,8 @@ import Playlist from "./Sidebar/Playlist";
 import DownloadApp from "./Sidebar/DownloadApp";
 import { useSelector } from "react-redux";
 import SidebarCover from "./Sidebar/SidebarCover";
+import { NavLink } from 'react-router-dom'
+
 
 function Sidebar() {
 
@@ -17,6 +19,27 @@ function Sidebar() {
       <a href="#" className="mb-7 px-6">
         <img alt="" src={logo} className="h-10" />
       </a>
+      <nav className='bg-[#121212] rounded-md w-[95%] mx-auto'>
+        <ul className='flex flex-col'>
+            <li>
+                <NavLink to={"/"} activeClassName=' text-white' exact className='h-10 flex gap-x-4 items-center text-sm font-semibold text-link hover:text-white rounded '>
+                    <span>
+                        <Icon name="home"/>
+                    </span>
+                    Ana sayfa
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"/search"} activeClassName='bg-active text-white' className='h-10 flex gap-x-4 items-center text-sm font-semibold text-link hover:text-white rounded '>
+                    <span>
+                        <Icon name="search" />
+                    </span>
+                    Ara
+                </NavLink>
+            </li>
+ 
+        </ul>
+    </nav>
       </div>
 
       <Menu className="px-2" />
