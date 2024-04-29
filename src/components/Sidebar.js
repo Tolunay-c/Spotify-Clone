@@ -12,6 +12,9 @@ import { NavLink } from 'react-router-dom'
 function Sidebar() {
 
   const sidebar = useSelector(state => state.player.sidebar)
+ 
+  
+
 
   return (
     <aside className="w-full md:w-1/5  flex  flex-shrink-0 flex-col bg-black">
