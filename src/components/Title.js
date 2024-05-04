@@ -7,7 +7,7 @@ function Title({ title, more = false }) {
       <NavLink to={more || '#'}>
         <h3 className='text-2xl text-white font-semibold tracking-tight hover:underline'>
           {title}
-        </h3>
+        </h3> 
       </NavLink>
       {more && (
         <NavLink to={more} className="text-xs font-semibold uppercase text-link hover:underline tracking-wider">
